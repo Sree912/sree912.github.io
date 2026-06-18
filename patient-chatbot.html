@@ -298,16 +298,11 @@ const KB = {
     experience: "45+ years of medical experience (graduated 1981)",
     telehealth: true,
     newPatients: true,
-    languages: ["English", "Spanish", "Hindi"],
+    languages: ["English", "Hindi", "Urdu", "Persian", "Telugu"],
     locations: [
       {
-        label:   "East Brunswick (Main Office)",
+        label:   "East Brunswick",
         address: "51 W Prospect St, Suite 101, East Brunswick, NJ 08816",
-        phone:   "(732) 390-0028",
-      },
-      {
-        label:   "Millville Office",
-        address: "608 High St N, Millville, NJ 08332",
         phone:   "(732) 390-0028",
       }
     ],
@@ -330,7 +325,7 @@ const KB = {
   appointments: {
     types: ["Routine Consultation", "Urgent Same-Day", "Annual Physical / Check-up",
             "Follow-up Visit", "Telehealth Visit", "Vaccination Appointment",
-            "DOT Physical", "Sports Physical", "Drug Screening", "Prescription Review"],
+            "Sports Physical", "Prescription Review"],
     cancellationPolicy: "Please cancel at least 2 hours before your appointment so we can offer the slot to another patient.",
     waitRoutine: "2–4 working days",
     waitUrgent:  "Same day — call as early as possible",
@@ -348,9 +343,8 @@ const KB = {
     "Addiction Medicine",
     "General Physical Exams",
     "Sports Physicals",
-    "DOT Physicals",
-    "Drug Screenings (Certified Review Officer)",
     "Onsite Laboratory Services",
+    "Medical Letters & Forms",
     "Telehealth Visits"
   ],
 
@@ -363,9 +357,9 @@ const KB = {
   },
 
   insurance: {
-    accepts: ["Medicare", "Medicaid", "Aetna", "UnitedHealthcare", "AARP", "1199SEIU",
-              "Horizon BCBS", "AmeriHealth", "Cigna", "Humana", "and 30+ additional plans"],
-    note: "Dr. Babu accepts 39+ insurance plans including Medicare and Medicaid. Contact reception to confirm your specific plan.",
+    accepts: ["Medicare", "Aetna", "UnitedHealthcare", "AARP", "1199SEIU",
+              "Horizon BCBS", "AmeriHealth", "Cigna", "Humana", "and several additional plans"],
+    note: "Dr. Babu accepts several major insurance plans including Medicare. Contact reception to confirm your specific plan.",
     selfPay: "Self-pay patients are welcome. Please call reception for our current fee schedule.",
   },
 
@@ -385,74 +379,37 @@ const KB = {
   },
 
   faqs: [
-    { q: "new patient",    a: "Yes! Dr. Sarath Babu is currently accepting new patients at both the East Brunswick and Millville offices. Please call <strong>(732) 390-0028</strong> to register and book your first appointment." },
+    { q: "new patient",    a: "Yes! Dr. Sarath Babu is currently accepting new patients. Please call <strong>(732) 390-0028</strong> to register and book your first appointment." },
     { q: "telehealth",     a: "Yes, MedCenter offers <strong>telehealth (virtual) visits</strong>. Call <strong>(732) 390-0028</strong> to schedule a telehealth appointment with Dr. Babu." },
-    { q: "language",       a: "Dr. Babu and the MedCenter team speak <strong>English, Spanish, and Hindi</strong>. Please inform reception of your language preference when booking." },
-    { q: "repeat prescription", a: "Request repeat prescriptions by calling reception at <strong>(732) 390-0028</strong> or speaking to Dr. Babu at your next visit. Please allow <strong>48–72 hours</strong> for processing." },
+    { q: "language",       a: "Dr. Babu and the MedCenter team speak <strong>Hindi, Urdu, Persian, Telugu, and English</strong>. Please inform reception of your language preference when booking." },
+    { q: "repeat prescription", a: "Prescriptions are covered under most insurance plans. Request repeat prescriptions by calling reception at <strong>(732) 390-0028</strong> or speaking to Dr. Babu at your next visit. Please allow <strong>48–72 hours</strong> for processing." },
     { q: "test results",   a: "Most lab results are ready within <strong>5–7 working days</strong>. You can call reception after 2 pm, or wait for our team to contact you directly. MedCenter has <strong>onsite laboratory services</strong> for your convenience." },
-    { q: "referral",       a: "Referrals are arranged by Dr. Sarath Babu during your consultation. He is affiliated with <strong>Inspira Medical Center – Vineland</strong>, <strong>John F. Kennedy Medical Center</strong>, and <strong>Raritan Bay Medical Center</strong>." },
-    { q: "dot physical",   a: "Yes, MedCenter offers <strong>DOT (Department of Transportation) Physical exams</strong>. Call <strong>(732) 390-0028</strong> to book." },
-    { q: "drug screening", a: "MedCenter provides certified <strong>drug screenings</strong> performed by a Certified Review Officer (CRO). Call reception to schedule." },
+    { q: "referral",       a: "Referrals are arranged by Dr. Sarath Babu during your consultation. Please call <strong>(732) 390-0028</strong> to discuss a referral." },
     { q: "sports physical", a: "Yes, <strong>Sports Physicals</strong> are available at MedCenter. Contact reception to book your appointment." },
-    { q: "hospital",       a: "Dr. Babu is affiliated with <strong>Inspira Medical Center – Vineland</strong>, <strong>John F. Kennedy Medical Center</strong>, and <strong>Raritan Bay Medical Center – Old Bridge Division</strong>." },
-    { q: "parking",        a: "Parking is available at both clinic locations. The East Brunswick office is at <strong>51 W Prospect St, Suite 101</strong>. Please contact reception if you need directions." },
+    { q: "medical letter", a: "Medical letters, insurance forms, sick notes, and other documentation are available on request. Please call <strong>(732) 390-0028</strong> and allow <strong>5–10 working days</strong> for completion." },
+    { q: "parking",        a: "Parking is available at the clinic. MedCenter is located at <strong>51 W Prospect St, Suite 101, East Brunswick, NJ 08816</strong>. Please contact reception if you need directions." },
     { q: "doctor",         a: "Our physician is <strong>Dr. Sarath Babu, MD</strong>, a specialist in Internal Medicine and Addiction Medicine with <strong>45+ years of experience</strong>. He is accepting new patients." },
-    { q: "location",       a: "MedCenter has two locations:<br>📍 <strong>East Brunswick:</strong> 51 W Prospect St, Suite 101, NJ 08816 — <strong>(732) 390-0028</strong><br>📍 <strong>Millville:</strong> 608 High St N, NJ 08332 — <strong>(732) 390-0028</strong>" },
-    { q: "services",       a: "MedCenter treats diabetes, hypertension, anemia, high cholesterol, heart and lung conditions, digestive issues, and offers physicals, drug screenings, DOT physicals, onsite labs, addiction medicine, and telehealth." },
-    { q: "vaccination",    a: "MedCenter offers all vaccinations on-premises. We administer CDC-recommended adult vaccines including flu, COVID-19, pneumonia, shingles, Tdap, hepatitis A &amp; B, HPV, MMR, and more. Call <strong>(732) 390-0028</strong> to book a vaccine appointment." },
+    { q: "location",       a: "MedCenter is located at:<br>📍 <strong>East Brunswick:</strong> 51 W Prospect St, Suite 101, NJ 08816 — <strong>(732) 390-0028</strong>" },
+    { q: "services",       a: "MedCenter treats diabetes, hypertension, anemia, high cholesterol, heart and lung conditions, digestive issues, and offers physicals, onsite labs, flu &amp; Tdap vaccinations, medical letters &amp; forms, addiction medicine, and telehealth." },
+    { q: "vaccination",    a: "MedCenter offers <strong>Flu (Influenza) shots</strong> and <strong>Tdap (Tetanus, Diphtheria, Pertussis)</strong> vaccines on-premises. Call <strong>(732) 390-0028</strong> to book a vaccine appointment." },
+    { q: "prescription",   a: "Prescriptions are covered under most insurance plans. For repeat prescriptions, call reception at <strong>(732) 390-0028</strong> or speak with Dr. Babu at your visit. Allow <strong>48–72 hours</strong> for processing." },
   ],
 
   vaccinations: {
-    note: "MedCenter offers all CDC-recommended vaccinations on-premises. Call (732) 390-0028 to book.",
+    note: "MedCenter administers Flu and Tdap vaccines on-premises. Call (732) 390-0028 to book.",
     categories: [
       {
-        name: "Annual / Seasonal",
+        name: "Influenza (Flu Shot)",
         icon: "🍂",
         vaccines: [
-          { name: "Influenza (Flu Shot)", desc: "Recommended every year for all adults. Trivalent formulation (2024–25 season)." },
-          { name: "COVID-19", desc: "Updated annual dose recommended for all adults. Dr. Babu can advise on the latest approved formulation." }
+          { name: "Annual Flu Vaccine", desc: "Recommended every year for all adults. Protects against seasonal influenza viruses. Available each flu season — call to confirm current availability." }
         ]
       },
       {
-        name: "Routine Adult Vaccines",
+        name: "Tdap (Tetanus, Diphtheria, Pertussis)",
         icon: "💉",
         vaccines: [
-          { name: "Tdap / Td (Tetanus, Diphtheria, Pertussis)", desc: "One Tdap dose for all adults, then Td booster every 10 years. Required during each pregnancy." },
-          { name: "MMR (Measles, Mumps, Rubella)", desc: "1–2 doses for adults born after 1957 who lack immunity." },
-          { name: "Varicella (Chickenpox)", desc: "2 doses for adults with no prior infection or vaccination." },
-          { name: "HPV (Human Papillomavirus)", desc: "Recommended up to age 26; shared decision-making for ages 27–45." },
-          { name: "Meningococcal (MenACWY & MenB)", desc: "Recommended for adults at increased risk or as per clinical guidance." }
-        ]
-      },
-      {
-        name: "Older Adults (50+)",
-        icon: "🧓",
-        vaccines: [
-          { name: "Shingles (Zoster / Shingrix)", desc: "2-dose series strongly recommended for adults 50+. Protects against shingles and postherpetic neuralgia." },
-          { name: "Pneumococcal (PCV15, PCV20, PPSV23)", desc: "Recommended for adults 65+, and younger adults with certain medical conditions (diabetes, heart/lung disease, etc.)." },
-          { name: "RSV Vaccine", desc: "Recommended for adults 75+; adults 60–74 at increased risk may consider it (shared clinical decision-making)." }
-        ]
-      },
-      {
-        name: "Travel & Lifestyle Vaccines",
-        icon: "✈️",
-        vaccines: [
-          { name: "Hepatitis A", desc: "2-dose series. Recommended for travelers, liver disease patients, and at-risk adults." },
-          { name: "Hepatitis B (Heplisav-B / Engerix-B)", desc: "2–3 dose series for all unvaccinated adults. Especially important for adults with diabetes, liver disease, or at occupational risk." },
-          { name: "Typhoid", desc: "For adults traveling to areas where typhoid is common." },
-          { name: "Yellow Fever", desc: "Required for travel to certain countries in Africa and South America." },
-          { name: "Japanese Encephalitis", desc: "For travelers to rural Asia at increased risk." },
-          { name: "Rabies (Pre-Exposure)", desc: "For those with occupational risk or travel to high-risk areas." }
-        ]
-      },
-      {
-        name: "High-Risk / Condition-Based",
-        icon: "🏥",
-        vaccines: [
-          { name: "Pneumococcal (extra doses)", desc: "Additional doses for patients with diabetes, heart disease, lung disease, or immunocompromising conditions." },
-          { name: "Meningococcal (additional doses)", desc: "For asplenic patients, those with complement deficiencies, or during outbreaks." },
-          { name: "Hepatitis B (accelerated schedule)", desc: "Available for patients with chronic kidney disease, HIV, or liver conditions." },
-          { name: "COVID-19 (extra doses)", desc: "Immunocompromised patients may require additional doses per CDC guidance." }
+          { name: "Tdap Booster", desc: "One Tdap dose for adults who have not previously received it; Td booster every 10 years thereafter. Recommended during each pregnancy." }
         ]
       }
     ]
@@ -607,7 +564,7 @@ function stateMainMenu(text) {
   if (detect(t, ["symptom", "sick", "pain", "feel", "ill", "unwell", "hurting", "ache", "triage"])) {
     state = "SYMPTOM_DESC"; return askSymptom();
   }
-  if (detect(t, ["insurance", "bill", "fee", "cost", "pay", "coverage", "copay", "medicare", "medicaid", "aetna", "self-pay"])) {
+  if (detect(t, ["insurance", "bill", "fee", "cost", "pay", "coverage", "copay", "medicare", "aetna", "self-pay"])) {
     state = "INSURANCE_MENU"; return showInsuranceMenu();
   }
   if (detect(t, ["faq", "question", "info", "hour", "timing", "open", "park", "result", "refer", "register",
@@ -642,15 +599,13 @@ function stateApptMenu(text) {
     appendChips(["📍 Clinic Hours", "🏠 Main Menu"]);
   } else if (detect(t, ["cancel"])) {
     appendMsg("bot", `To cancel an appointment, please contact us:<br><br>
-      📞 <strong>East Brunswick:</strong> (732) 390-0028<br>
-      📞 <strong>Millville:</strong> (732) 390-0028<br><br>
+      📞 <strong>(732) 390-0028</strong><br><br>
       ⚠️ <em>${KB.appointments.cancellationPolicy}</em>`);
     state = "MAIN_MENU";
     appendChips(["📍 Clinic Hours", "🏠 Main Menu"]);
   } else if (detect(t, ["reschedule", "change", "move"])) {
     appendMsg("bot", `To reschedule, please call us and we'll find you a new suitable time:<br><br>
-      📞 <strong>East Brunswick:</strong> (732) 390-0028<br>
-      📞 <strong>Millville:</strong> (732) 390-0028`);
+      📞 <strong>(732) 390-0028</strong>`);
     state = "MAIN_MENU";
     appendChips(["📍 Clinic Hours", "🏠 Main Menu"]);
   } else if (detect(t, ["location", "hour", "timing", "address", "open", "where"])) {
@@ -668,15 +623,13 @@ function stateApptType(text) {
 
   if (isUrgent) {
     appendMsg("bot", `For a <strong>same-day urgent appointment</strong>, please call us as early as possible — slots fill quickly.<br><br>
-      📞 <strong>East Brunswick:</strong> (732) 390-0028<br>
-      📞 <strong>Millville:</strong> (732) 390-0028`);
+      📞 <strong>(732) 390-0028</strong>`);
   } else if (isTele) {
     appendMsg("bot", `To book a <strong>Telehealth Visit</strong> with Dr. Babu, call:<br><br>
       📞 <strong>(732) 390-0028</strong>`);
   } else {
     appendMsg("bot", `A <strong>${ctx.apptType}</strong> with Dr. Sarath Babu can be booked by calling:<br><br>
-      📞 <strong>East Brunswick:</strong> (732) 390-0028<br>
-      📞 <strong>Millville:</strong> (732) 390-0028<br><br>
+      📞 <strong>(732) 390-0028</strong><br><br>
       ℹ️ <em>${KB.appointments.newPatients}</em><br>
       🕐 Typical wait: <strong>${KB.appointments.waitRoutine}</strong>`);
   }
@@ -699,7 +652,7 @@ function showContactCard() {
     <br><br>${locs}<br>
     <strong>Clinic Hours:</strong><br>${hours}
     <br><div class="row"><span class="icon">💻</span><span>Telehealth available</span></div>
-    <div class="row"><span class="icon">🌐</span><span>Languages: English · Spanish · Hindi</span></div>
+    <div class="row"><span class="icon">🌐</span><span>Languages: Hindi · Urdu · Persian · Telugu · English</span></div>
     <div class="row"><span class="icon">🟢</span><span>WhatsApp: <strong>${KB.contact.whatsappFmt}</strong></span></div>
     <div class="row"><span class="icon">✉️</span><span>Email: <strong>${KB.contact.email}</strong></span></div>
   `);
@@ -721,7 +674,7 @@ function showContactCard() {
 /* ── SERVICES ───────────────────────────────────────────────── */
 function showServicesMenu() {
   appendMsg("bot", `MedCenter offers a wide range of services under <strong>Dr. Sarath Babu's</strong> care. What are you interested in?`);
-  appendChips(["🩺 Medical Conditions Treated", "🏃 Physicals (DOT / Sports / Annual)", "🔬 Lab & Drug Screenings", "💻 Telehealth", "🏥 Hospital Affiliations"]);
+  appendChips(["🩺 Medical Conditions Treated", "🏃 Annual & Sports Physicals", "🔬 Onsite Lab Services", "💉 Vaccinations", "📝 Medical Letters & Forms", "💻 Telehealth"]);
 }
 
 function stateServicesMenu(text) {
@@ -733,24 +686,30 @@ function stateServicesMenu(text) {
       .map(s => `<span class="tag">${s}</span>`).join("");
     appendMsg("bot", `Dr. Babu specialises in diagnosing and managing:<br><br>${list}<br><br>
       This is not an exhaustive list — feel free to call us about any concern.`);
-  } else if (detect(t, ["physical", "dot", "sport", "annual", "check"])) {
+  } else if (detect(t, ["physical", "sport", "annual", "check"])) {
     appendMsg("bot", `MedCenter provides:<br><br>
       ✅ <strong>Annual / General Physicals</strong> – routine health check-ups<br>
-      ✅ <strong>DOT Physicals</strong> – for commercial drivers (FMCSA compliant)<br>
       ✅ <strong>Sports Physicals</strong> – for school or sports clearance<br><br>
       📞 Book via <strong>(732) 390-0028</strong>`);
-  } else if (detect(t, ["lab", "drug", "screen", "test", "onsite"])) {
+  } else if (detect(t, ["lab", "test", "onsite"])) {
     appendMsg("bot", `MedCenter offers:<br><br>
-      🔬 <strong>Onsite Laboratory Services</strong> – convenient in-house testing<br>
-      💊 <strong>Drug Screenings</strong> – performed by a Certified Review Officer (CRO)<br><br>
+      🔬 <strong>Onsite Laboratory Services</strong> – convenient in-house testing<br><br>
       📞 Call <strong>(732) 390-0028</strong> to schedule.`);
+  } else if (detect(t, ["letter", "form", "certificate", "note", "document", "prescription"])) {
+    appendMsg("bot", `MedCenter provides:<br><br>
+      📝 <strong>Medical Letters &amp; Forms</strong> – sick notes, insurance forms, and other documentation<br>
+      💊 <strong>Prescriptions</strong> – covered under most insurance plans<br><br>
+      Please allow <strong>5–10 working days</strong> for document completion. Call <strong>(732) 390-0028</strong> to request.`);
+  } else if (detect(t, ["vaccin", "flu", "tdap", "shot"])) {
+    appendMsg("bot", `MedCenter administers:<br><br>
+      💉 <strong>Influenza (Flu Shot)</strong> – annual vaccine for all adults<br>
+      💉 <strong>Tdap (Tetanus, Diphtheria, Pertussis)</strong> – booster for adults<br><br>
+      📞 Call <strong>(732) 390-0028</strong> to book a vaccine appointment.`);
   } else if (detect(t, ["telehealth", "virtual", "online", "remote"])) {
     appendMsg("bot", `✅ <strong>Telehealth visits</strong> are available with Dr. Sarath Babu.<br><br>
       Consult Dr. Babu from the comfort of your home. Call <strong>(732) 390-0028</strong> to book a virtual appointment.`);
   } else if (detect(t, ["hospital", "affili", "admitted"])) {
-    const list = KB.clinic.hospitalAffiliations.map(h => `• ${h}`).join("<br>");
-    appendMsg("bot", `Dr. Babu is affiliated with the following hospitals:<br><br>${list}<br><br>
-      If you need inpatient care, Dr. Babu can coordinate with these facilities.`);
+    appendMsg("bot", `For referrals or inpatient care needs, please speak directly with Dr. Babu during your consultation. Call <strong>(732) 390-0028</strong> to book an appointment.`);
   } else {
     showServicesMenu(); return;
   }
@@ -805,7 +764,7 @@ function stateSymptomDesc(text) {
 /* ── INSURANCE & BILLING ────────────────────────────────────── */
 function showInsuranceMenu() {
   appendMsg("bot", "What insurance or billing information do you need?");
-  appendChips(["✅ Accepted Insurance Plans", "💰 Self-Pay Options", "🧾 Medical Certificates / Letters", "🆓 Medicare & Medicaid"]);
+  appendChips(["✅ Accepted Insurance Plans", "💰 Self-Pay Options", "🧾 Medical Letters & Forms", "💊 Prescriptions & Coverage"]);
 }
 
 function stateInsuranceMenu(text) {
@@ -820,12 +779,16 @@ function stateInsuranceMenu(text) {
       ${KB.insurance.selfPay}<br><br>
       📞 Call <strong>(732) 390-0028</strong> for our current fee schedule.`);
   } else if (detect(t, ["certif", "letter", "form", "report", "document", "sick note"])) {
-    appendMsg("bot", `🧾 <strong>Medical Certificates & Letters:</strong><br><br>
-      Fees may apply for private medical letters, insurance forms, and reports. Please contact reception for details and allow <strong>5–10 working days</strong> for completion.<br><br>
+    appendMsg("bot", `🧾 <strong>Medical Letters & Forms:</strong><br><br>
+      Medical letters, insurance forms, sick notes, and other documentation are available on request. Please contact reception for details and allow <strong>5–10 working days</strong> for completion.<br><br>
       📞 <strong>(732) 390-0028</strong>`);
-  } else if (detect(t, ["medicare", "medicaid", "free", "exempt"])) {
-    appendMsg("bot", `✅ <strong>Dr. Babu accepts both Medicare and Medicaid.</strong><br><br>
-      Please bring your Medicare/Medicaid card to your appointment. If you have questions about coverage, call:<br><br>
+  } else if (detect(t, ["prescription", "rx", "medicine", "medication"])) {
+    appendMsg("bot", `💊 <strong>Prescriptions:</strong><br><br>
+      Prescriptions are covered under most insurance plans. For repeat prescriptions, call reception or speak to Dr. Babu at your next visit. Allow <strong>48–72 hours</strong> for processing.<br><br>
+      📞 <strong>(732) 390-0028</strong>`);
+  } else if (detect(t, ["medicare", "free", "exempt"])) {
+    appendMsg("bot", `✅ <strong>Dr. Babu accepts Medicare</strong> and several major insurance plans.<br><br>
+      Please bring your insurance card to your appointment. Call to confirm your specific plan:<br><br>
       📞 <strong>(732) 390-0028</strong>`);
   } else {
     showInsuranceMenu(); return;
@@ -956,8 +919,7 @@ function stateEnquiryMenu(text) {
   else if (detect(t, ["email", "mail"])) { showEnquiryForm("email"); }
   else if (detect(t, ["phone", "call", "ring"])) {
     appendMsg("bot", `📞 Please call us directly:<br><br>
-      <strong>East Brunswick:</strong> (732) 390-0028<br>
-      <strong>Millville:</strong> (732) 390-0028`);
+      <strong>(732) 390-0028</strong>`);
     state = "MAIN_MENU";
     appendChips(["🏠 Main Menu"]);
   }
@@ -966,81 +928,53 @@ function stateEnquiryMenu(text) {
 
 /* ── VACCINATIONS ───────────────────────────────────────────── */
 function showVaccMenu() {
-  appendMsg("bot", `💉 <strong>MedCenter offers all CDC-recommended vaccinations on-premises</strong> — no pharmacy trip needed!<br><br>Which category would you like to know about?`);
-  appendChips(["🍂 Flu & COVID (Annual)", "💉 Routine Adult Vaccines", "🧓 Older Adults (50+)", "✈️ Travel Vaccines", "🏥 High-Risk / Condition-Based", "📅 Book a Vaccine Appointment"]);
+  appendMsg("bot", `💉 <strong>MedCenter offers Flu and Tdap vaccinations on-premises</strong> — no pharmacy trip needed!<br><br>Which would you like to know about?`);
+  appendChips(["🍂 Flu Shot (Influenza)", "💉 Tdap Vaccine", "📅 Book a Vaccine Appointment"]);
 }
 
 function stateVaccMenu(text) {
   const t = text.toLowerCase();
 
-  if (detect(t, ["flu", "covid", "annual", "seasonal", "influenza"])) {
+  if (detect(t, ["flu", "annual", "seasonal", "influenza"])) {
     const cat = KB.vaccinations.categories[0];
-    const list = cat.vaccines.map(v =>
-      `<div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`
-    ).join("");
-    appendMsg("bot", `${cat.icon} <strong>${cat.name} Vaccines:</strong><br><br>${list}`);
+    const v = cat.vaccines[0];
+    appendMsg("bot", `${cat.icon} <strong>${cat.name}:</strong><br><br>
+      <div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`);
 
-  } else if (detect(t, ["routine", "adult", "tdap", "tetanus", "mmr", "measles", "varicella", "chickenpox", "hpv", "meningococcal"])) {
+  } else if (detect(t, ["tdap", "tetanus", "diphtheria", "pertussis", "booster"])) {
     const cat = KB.vaccinations.categories[1];
-    const list = cat.vaccines.map(v =>
-      `<div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`
-    ).join("");
-    appendMsg("bot", `${cat.icon} <strong>${cat.name}:</strong><br><br>${list}`);
-
-  } else if (detect(t, ["older", "senior", "50", "65", "shingles", "pneum", "rsv", "zoster"])) {
-    const cat = KB.vaccinations.categories[2];
-    const list = cat.vaccines.map(v =>
-      `<div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`
-    ).join("");
-    appendMsg("bot", `${cat.icon} <strong>${cat.name} Vaccines:</strong><br><br>${list}`);
-
-  } else if (detect(t, ["travel", "hepatitis", "typhoid", "yellow fever", "japanese", "rabies", "trip"])) {
-    const cat = KB.vaccinations.categories[3];
-    const list = cat.vaccines.map(v =>
-      `<div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`
-    ).join("");
-    appendMsg("bot", `${cat.icon} <strong>${cat.name}:</strong><br><br>${list}<br>
-      <em>💡 Please contact us at least 4–6 weeks before your travel date for travel vaccines.</em>`);
-
-  } else if (detect(t, ["high risk", "condition", "diabetes", "heart", "kidney", "hiv", "immune", "chronic"])) {
-    const cat = KB.vaccinations.categories[4];
-    const list = cat.vaccines.map(v =>
-      `<div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`
-    ).join("");
-    appendMsg("bot", `${cat.icon} <strong>${cat.name} Vaccines:</strong><br><br>${list}<br>
-      <em>💡 Dr. Babu will advise which vaccines are right for your condition during your consultation.</em>`);
+    const v = cat.vaccines[0];
+    appendMsg("bot", `${cat.icon} <strong>${cat.name}:</strong><br><br>
+      <div style="margin-bottom:8px"><strong>💉 ${v.name}</strong><br><span style="color:#64748b;font-size:12px">${v.desc}</span></div>`);
 
   } else if (detect(t, ["book", "appoint", "schedule", "get vaccin", "get shot"])) {
     appendMsg("bot", `To book a <strong>vaccination appointment</strong> at MedCenter:<br><br>
-      📞 <strong>East Brunswick:</strong> (732) 390-0028<br>
-      📞 <strong>Millville:</strong> (732) 390-0028<br><br>
-      💡 <em>Most vaccines are covered by Medicare, Medicaid, and major insurance plans. Please bring your insurance card.</em>`);
+      📞 <strong>(732) 390-0028</strong><br><br>
+      💡 <em>Flu and Tdap vaccines are typically covered by Medicare and major insurance plans. Please bring your insurance card.</em>`);
     state = "MAIN_MENU";
     appendChips(["📍 Clinic Hours", "🏠 Main Menu"]);
     return;
 
   } else {
-    // Show full summary list of all vaccines
-    const allVaccines = KB.vaccinations.categories.flatMap(c => c.vaccines.map(v => v.name));
-    const tags = allVaccines.map(v => `<span class="tag">${v}</span>`).join("");
-    appendMsg("bot", `Here is the <strong>complete list of vaccinations</strong> available at MedCenter:<br><br>${tags}<br><br>
+    const tags = KB.vaccinations.categories.map(c => `<span class="tag">${c.vaccines[0].name}</span>`).join("");
+    appendMsg("bot", `MedCenter administers the following vaccines on-premises:<br><br>${tags}<br><br>
       📞 Call <strong>(732) 390-0028</strong> to confirm availability and book your appointment.`);
     state = "MAIN_MENU";
-    appendChips(["📅 Book Vaccine Appointment", "💉 Browse by Category", "🏠 Main Menu"]);
+    appendChips(["📅 Book Vaccine Appointment", "💉 More Vaccine Info", "🏠 Main Menu"]);
     return;
   }
 
-  appendMsg("bot", "Would you like to explore another vaccine category or book an appointment?");
+  appendMsg("bot", "Would you like to book a vaccine appointment or have more questions?");
   state = "VACC_MENU";
-  appendChips(["🍂 Flu & COVID", "💉 Routine Vaccines", "🧓 Older Adults (50+)", "✈️ Travel Vaccines", "📅 Book Appointment", "🏠 Main Menu"]);
+  appendChips(["🍂 Flu Shot", "💉 Tdap Vaccine", "📅 Book Appointment", "🏠 Main Menu"]);
 }
 
 /* ── FAQs ───────────────────────────────────────────────────── */
 const FAQ_CHIPS = [
-  "📍 Locations & Hours", "👨‍⚕️ About Dr. Babu", "🆕 New Patients",
+  "📍 Location & Hours", "👨‍⚕️ About Dr. Babu", "🆕 New Patients",
   "💉 Vaccinations", "💻 Telehealth", "🌐 Languages Spoken",
-  "🔁 Repeat Prescriptions", "📊 Test Results", "📋 Referrals",
-  "🏥 Hospital Affiliations", "🔬 Lab Services", "📲 Send Enquiry"
+  "🔁 Repeat Prescriptions", "📊 Test Results", "📋 Medical Letters & Forms",
+  "🔬 Lab Services", "💊 Prescriptions", "📲 Send Enquiry"
 ];
 
 function showFaqMenu(text) {
@@ -1063,19 +997,17 @@ function handleFaqQuestion(text) {
     { keys: ["about", "who is", "doctor", "dr", "sarath", "physician", "experience"],           q: "doctor" },
     { keys: ["new patient", "accepting", "register", "sign up", "join"],                        q: "new patient" },
     { keys: ["telehealth", "virtual", "online", "video call", "remote"],                        q: "telehealth" },
-    { keys: ["language", "spanish", "hindi", "interpret", "translat"],                          q: "language" },
-    { keys: ["repeat prescription", "refill", "medication"],                                    q: "repeat prescription" },
+    { keys: ["language", "hindi", "urdu", "persian", "telugu", "interpret", "translat"],         q: "language" },
+    { keys: ["repeat prescription", "refill", "prescription", "medication", "rx"],              q: "prescription" },
     { keys: ["result", "test result", "lab result"],                                            q: "test results" },
     { keys: ["refer", "specialist"],                                                             q: "referral" },
-    { keys: ["hospital", "affili", "admitted", "inpatient"],                                    q: "hospital" },
-    { keys: ["lab", "onsite", "drug screen", "screening"],                                      q: "drug screening" },
-    { keys: ["dot physical", "dot"],                                                             q: "dot physical" },
+    { keys: ["lab", "onsite", "test"],                                                          q: "services" },
+    { keys: ["letter", "form", "medical letter", "sick note", "certificate"],                   q: "medical letter" },
     { keys: ["sport physical", "sports"],                                                        q: "sports physical" },
     { keys: ["park"],                                                                            q: "parking" },
     { keys: ["service", "treat", "condition", "what do you", "offer"],                          q: "services" },
-    { keys: ["vaccin", "immuniz", "shot", "jab", "booster", "flu shot", "shingles",
-              "tdap", "hepatitis", "mmr", "hpv", "pneumon", "rsv", "covid vaccine",
-              "travel vaccine", "varicella", "meningococcal"],                                   q: null, fn: () => { state = "VACC_MENU"; showVaccMenu(); } },
+    { keys: ["vaccin", "immuniz", "shot", "jab", "booster", "flu shot",
+              "tdap", "tetanus", "influenza"],                                                   q: null, fn: () => { state = "VACC_MENU"; showVaccMenu(); } },
     { keys: ["enquiry", "enquire", "whatsapp", "email", "contact", "send", "message", "get in touch"],
                                                                                                  q: null, fn: () => { state = "ENQUIRY_MENU"; showEnquiryMenu(); } },
   ];
